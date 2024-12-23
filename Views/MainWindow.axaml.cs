@@ -9,7 +9,7 @@ namespace EcoSys.Views
         public MainWindow()
         {
             InitializeComponent();
-            DataContext = new MainWindowViewModel();  // Lier le ViewModel à la vue
+            DataContext = new MainWindowViewModel();
         }
 
         private void InitializeComponent()

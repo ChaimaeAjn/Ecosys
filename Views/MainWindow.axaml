@@ -1,39 +1,41 @@
 <Window xmlns="https://github.com/avaloniaui"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:vm="using:EcoSys.ViewModels"
+        xmlns:local="using:EcoSys"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="EcoSys.Views.MainWindow"
         x:DataType="vm:MainWindowViewModel"
-        Icon="/Assets/avalonia-logo.ico"
         Title="EcoSys">
+    
+    <Panel>
+        <Image Source="/Assets/Fond.png" Stretch="UniformToFill"/>
+        <ItemsControl ItemsSource="{Binding EcosysObjects}">
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <Canvas Width="{Binding CanvasWidth}" Height="{Binding CanvasHeight}"/>
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+            
+            <ItemsControl.ItemContainerTheme>
+                <ControlTheme TargetType="ContentPresenter" x:DataType="local:EcosysObjet">
+                    <Setter Property="Canvas.Left" Value="{Binding Location.X}" />
+                    <Setter Property="Canvas.Top" Value="{Binding Location.Y}" />
+                </ControlTheme>
+            </ItemsControl.ItemContainerTheme>
 
-    <Design.DataContext>
-        <vm:MainWindowViewModel/>
-    </Design.DataContext>
-
-    <Canvas x:Name="MainCanvas">
-        <!-- Fond de l'application -->
-        <Image Source="/Assets/Fond.png" Stretch="Fill" Width="800" Height="450"/>
-
-        <!-- Lien avec le déplacement de l'animal -->
-        <Image x:Name="MovingDragon" 
-               Source="/Assets/MovingDragon.png" 
-               Width="50" 
-               Height="50"
-               Canvas.Left="{Binding ImageLeft}" 
-               Canvas.Top="{Binding ImageTop}" />
-
-        <!-- Exemple d'affichage des plantes -->
-        <ItemsControl ItemsSource="{Binding Plantes}">
-            <ItemsControl.ItemTemplate>
-                <DataTemplate>
-                    <Image Source="/Assets/Plante.png" Width="50" Height="50" 
-                           Canvas.Left="{Binding ImageLeft}" 
-                           Canvas.Top="{Binding ImageTop}" />
+            <ItemsControl.DataTemplates>
+                <DataTemplate DataType="{x:Type local:Animal}">
+                    <Image Width="50" Height="50"
+                           Source="/Assets/MovingDragon.png" />
                 </DataTemplate>
-            </ItemsControl.ItemTemplate>
+                
+                <DataTemplate DataType="{x:Type local:Plante}">
+                    <Image Width="50" Height="50"
+                           Source="/Assets/Plante.png" />
+                </DataTemplate>
+            </ItemsControl.DataTemplates>
         </ItemsControl>
-    </Canvas>
+    </Panel>
 </Window>
