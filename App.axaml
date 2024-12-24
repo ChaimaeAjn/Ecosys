@@ -1,14 +1,17 @@
 <Application xmlns="https://github.com/avaloniaui"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:EcoSys"
+             xmlns:converters="clr-namespace:EcoSys.Converters"
              x:Class="EcoSys.App"
-             xmlns:local="using:EcoSys"
              RequestedThemeVariant="Default">
-             <!-- "Default" ThemeVariant follows system theme variant. "Dark" or "Light" are other available options. -->
-
+    <Application.Resources>
+        <!-- Converters -->
+        <converters:DivideByDoubleConverter x:Key="DivideByDoubleConverter"/>
+        <converters:HeartsToVisibilityConverter x:Key="HeartsToVisibilityConverter"/>
+    </Application.Resources>
     <Application.DataTemplates>
         <local:ViewLocator/>
     </Application.DataTemplates>
-  
     <Application.Styles>
         <FluentTheme />
     </Application.Styles>

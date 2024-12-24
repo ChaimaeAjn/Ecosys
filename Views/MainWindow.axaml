@@ -26,14 +26,49 @@
             </ItemsControl.ItemContainerTheme>
 
             <ItemsControl.DataTemplates>
-                <DataTemplate DataType="{x:Type local:Animal}">
-                    <Image Width="50" Height="50"
-                           Source="/Assets/MovingDragon.png" />
+                <DataTemplate DataType="{x:Type local:Carnivore}">
+                    <StackPanel>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                            <Image Source="/Assets/Heart.png" Width="20" Height="20" IsVisible="{Binding Hearts, Converter={StaticResource HeartsToVisibilityConverter}, ConverterParameter=1}"/>
+                            <Image Source="/Assets/Heart.png" Width="20" Height="20" IsVisible="{Binding Hearts, Converter={StaticResource HeartsToVisibilityConverter}, ConverterParameter=2}"/>
+                            <Image Source="/Assets/Heart.png" Width="20" Height="20" IsVisible="{Binding Hearts, Converter={StaticResource HeartsToVisibilityConverter}, ConverterParameter=3}"/>
+                        </StackPanel>
+                        <Image Width="50" Height="50"
+                            Source="/Assets/MovingDragon.png" 
+                            Opacity="{Binding Energy, Converter={StaticResource DivideByDoubleConverter}, ConverterParameter=100}"/>
+                        <ProgressBar Value="{Binding Energy}" 
+                                    Maximum="100" 
+                                    Height="5" 
+                                    Width="50" 
+                                    Margin="0,-5,0,0"
+                                    Foreground="Green"
+                                    Background="Red"/>
+                    </StackPanel>
                 </DataTemplate>
                 
                 <DataTemplate DataType="{x:Type local:Plante}">
                     <Image Width="50" Height="50"
                            Source="/Assets/Plante.png" />
+                </DataTemplate>
+
+                <DataTemplate DataType="{x:Type local:Herbivore}">
+                    <StackPanel>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                            <Image Source="/Assets/Heart.png" Width="20" Height="20" IsVisible="{Binding Hearts, Converter={StaticResource HeartsToVisibilityConverter}, ConverterParameter=1}"/>
+                            <Image Source="/Assets/Heart.png" Width="20" Height="20" IsVisible="{Binding Hearts, Converter={StaticResource HeartsToVisibilityConverter}, ConverterParameter=2}"/>
+                            <Image Source="/Assets/Heart.png" Width="20" Height="20" IsVisible="{Binding Hearts, Converter={StaticResource HeartsToVisibilityConverter}, ConverterParameter=3}"/>
+                        </StackPanel>
+                        <Image Width="50" Height="50"
+                            Source="/Assets/Herbivore.png" 
+                            Opacity="{Binding Energy, Converter={StaticResource DivideByDoubleConverter}, ConverterParameter=100}"/>
+                        <ProgressBar Value="{Binding Energy}" 
+                                    Maximum="100" 
+                                    Height="5" 
+                                    Width="50" 
+                                    Margin="0,-5,0,0"
+                                    Foreground="Green"
+                                    Background="Red"/>
+                    </StackPanel>
                 </DataTemplate>
             </ItemsControl.DataTemplates>
         </ItemsControl>
