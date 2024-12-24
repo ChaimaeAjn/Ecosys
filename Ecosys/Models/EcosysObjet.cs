@@ -7,7 +7,8 @@ namespace EcoSys
     public abstract class EcosysObjet : INotifyPropertyChanged
     {
         private Point _location;
-        
+        private double _sizeRadius;  // Ajout du champ SizeRadius
+
         public Point Location
         {
             get => _location;
@@ -16,6 +17,19 @@ namespace EcoSys
                 if (_location != value)
                 {
                     _location = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
+
+        public double SizeRadius  // Propriété SizeRadius
+        {
+            get => _sizeRadius;
+            protected set
+            {
+                if (_sizeRadius != value)
+                {
+                    _sizeRadius = value;
                     OnPropertyChanged();
                 }
             }

@@ -75,6 +75,7 @@ namespace EcoSys
             _imageTop = top;
             _canvasWidth = canvasWidth;
             _canvasHeight = canvasHeight;
+            SizeRadius = 25.0;  // Taille spécifique pour un carnivore
             _energy = MAX_ENERGY;
             _hearts = 3; // Les carnivores commencent avec 3 cœurs
             IsDead = false;

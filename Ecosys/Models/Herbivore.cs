@@ -75,6 +75,7 @@ namespace EcoSys
             _imageTop = top;
             _canvasWidth = canvasWidth;
             _canvasHeight = canvasHeight;
+            SizeRadius = 20.0;  // Taille spécifique pour un herbivore
             _energy = MAX_ENERGY;
             _hearts = 3; // Les carnivores commencent avec 3 cœurs
             IsDead = false;
@@ -130,6 +131,7 @@ namespace EcoSys
 
         public void EatPlante()
         {
+            Console.WriteLine("Miam");
             Energy += 20; // Gain d'énergie en mangeant une plante
         }
     }
