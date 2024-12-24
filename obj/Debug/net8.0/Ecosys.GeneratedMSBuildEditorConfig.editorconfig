@@ -19,8 +19,8 @@ build_property.ProjectDir = C:\Users\ajnai\OneDrive\Documents\Ecosys\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 
-[c:/Users/ajnai/OneDrive/Documents/Ecosys/App.axaml]
+[C:/Users/ajnai/OneDrive/Documents/Ecosys/Ecosys/App.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[c:/Users/ajnai/OneDrive/Documents/Ecosys/Views/MainWindow.axaml]
+[C:/Users/ajnai/OneDrive/Documents/Ecosys/Ecosys/Views/MainWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml

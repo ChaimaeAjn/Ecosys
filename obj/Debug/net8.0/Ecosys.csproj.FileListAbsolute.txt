@@ -60,6 +60,7 @@ C:\Users\ajnai\OneDrive\Documents\Ecosys\obj\Debug\net8.0\Ecosys.GeneratedMSBuil
 C:\Users\ajnai\OneDrive\Documents\Ecosys\obj\Debug\net8.0\Ecosys.AssemblyInfoInputs.cache
 C:\Users\ajnai\OneDrive\Documents\Ecosys\obj\Debug\net8.0\Ecosys.AssemblyInfo.cs
 C:\Users\ajnai\OneDrive\Documents\Ecosys\obj\Debug\net8.0\Ecosys.csproj.CoreCompileInputs.cache
+C:\Users\ajnai\OneDrive\Documents\Ecosys\obj\Debug\net8.0\Ecosys.sourcelink.json
 C:\Users\ajnai\OneDrive\Documents\Ecosys\obj\Debug\net8.0\Avalonia\Ecosys.dll
 C:\Users\ajnai\OneDrive\Documents\Ecosys\obj\Debug\net8.0\Avalonia\Ecosys.pdb
 C:\Users\ajnai\OneDrive\Documents\Ecosys\obj\Debug\net8.0\refint\Avalonia\Ecosys.dll
