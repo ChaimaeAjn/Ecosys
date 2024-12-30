@@ -51,6 +51,11 @@
                            Source="/Assets/Plante.png" />
                 </DataTemplate>
 
+                <DataTemplate DataType="{x:Type local:Viande}">
+                    <Image Width="50" Height="50"
+                           Source="/Assets/Viande.png" />
+                </DataTemplate>
+
                 <DataTemplate DataType="{x:Type local:Herbivore}">
                     <StackPanel>
                         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">

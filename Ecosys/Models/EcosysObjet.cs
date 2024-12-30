@@ -7,7 +7,10 @@ namespace EcoSys
     public abstract class EcosysObjet : INotifyPropertyChanged
     {
         private Point _location;
-        private double _sizeRadius;  // Ajout du champ SizeRadius
+        public virtual double SizeRadius { get; protected set; }
+
+        // Dans EcosysObjet, ajouter juste :
+        public virtual bool IsEdible { get; protected set; } = false;
 
         public Point Location
         {
@@ -22,18 +25,6 @@ namespace EcoSys
             }
         }
 
-        public double SizeRadius  // Propriété SizeRadius
-        {
-            get => _sizeRadius;
-            protected set
-            {
-                if (_sizeRadius != value)
-                {
-                    _sizeRadius = value;
-                    OnPropertyChanged();
-                }
-            }
-        }
 
         public event PropertyChangedEventHandler? PropertyChanged;
 
