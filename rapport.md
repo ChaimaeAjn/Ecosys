@@ -35,3 +35,8 @@ Dans notre code, la classe **Carnivore** respecte ce principe grâce à l'hérit
 
 - **Ajout de nouvelles fonctionnalités dans Carnivore** :  
   Par exemple, on peut ajouter la méthode **EatHerbivore()** pour simuler un carnivore mangeant un herbivore. Cette fonctionnalité est ajoutée directement dans la classe **Carnivore** sans avoir à modifier la classe **Animal**. Chaque sous-classe peut ainsi ajouter des comportements spécifiques sans affecter le reste du code.
+  
+## Le diagramme d'activités
+
+![image](https://github.com/user-attachments/assets/9049111e-eabe-4726-b2d2-dc73fb07e5bf)
+
