@@ -1,6 +1,7 @@
 # EcoSys Simulation
 
 **EcoSys Simulation** est une application permettant de simuler un écosystème où des plantes, herbivores, et carnivores interagissent dans un environnement dynamique. Chaque entité possède des comportements uniques tels que la reproduction, la consommation d'énergie et les interactions avec d'autres entités.
+![image](https://github.com/user-attachments/assets/e7971f20-0005-48df-ab3a-953ca736d5e1)
 
 ## Table des matières
 
