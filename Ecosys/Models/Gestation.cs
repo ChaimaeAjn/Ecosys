@@ -2,15 +2,20 @@ using System;
 
 namespace EcoSys
 {
+    // Classe générique représentant la gestation d'un objet EcosysObjet (par exemple, un animal)
     public class Gestation<T> where T : EcosysObjet
     {
-        public T Mere { get; }             // La mère (carnivore ou herbivore)
-        public DateTime FinGestation { get; } // Date de fin de la gestation
+        // La mère qui est en gestation, peut être un carnivore ou un herbivore
+        public T Mere { get; }
 
+        // La date de fin de la gestation
+        public DateTime FinGestation { get; }
+
+        // Constructeur de la classe Gestation qui initialise la mère et la date de fin de gestation
         public Gestation(T mere, TimeSpan dureeGestation)
         {
-            Mere = mere;
-            FinGestation = DateTime.Now + dureeGestation;
+            Mere = mere; // Affecte la mère à la propriété Mere
+            FinGestation = DateTime.Now + dureeGestation; // Calcule la fin de la gestation en ajoutant la durée à la date actuelle
         }
     }
 }

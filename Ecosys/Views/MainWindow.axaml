@@ -34,7 +34,7 @@
                             <Image Source="/Assets/Heart.png" Width="20" Height="20" IsVisible="{Binding Hearts, Converter={StaticResource HeartsToVisibilityConverter}, ConverterParameter=3}"/>
                         </StackPanel>
                         <Image Width="50" Height="50"
-                            Source="/Assets/MovingDragon.png" 
+                            Source="/Assets/Carnivore.png" 
                             Opacity="{Binding Energy, Converter={StaticResource DivideByDoubleConverter}, ConverterParameter=100}"/>
                         <ProgressBar Value="{Binding Energy}" 
                                     Maximum="100" 
