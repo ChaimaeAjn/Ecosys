@@ -1,6 +1,8 @@
+#Une description d’au moins deux principes SOLID utilisés dans le projet.
+
 ## 1. Le principe de responsabilité unique (SRP) avec le code Animal.cs
 
-Le principe de responsabilité unique (SRP) stipule qu'une classe ou une méthode doit être responsable d'une seule chose. Cela permet de garder un code plus cohérent, facile à maintenir, et évite les effets de bord inutiles.
+Le principe de responsabilité unique (SRP) stipule qu'une classe ou une méthode doit être responsable d'une seule chose. Cela permet de garder un code plus cohérent et facile à maintenir.
 
 Dans notre code, la classe **Animal** respecte ce principe.
 
@@ -34,9 +36,13 @@ Dans notre code, la classe **Carnivore** respecte ce principe grâce à l'hérit
   Si l'on souhaite ajouter un nouvel animal, comme un **Herbivore** ou un **Omnivore**, il suffit de créer une nouvelle classe qui hérite de **Animal**. On n'a pas besoin de toucher ni à la classe **Carnivore**, ni à **Animal**. Cela permet d'ajouter de nouveaux types d'animaux sans perturber le système existant.
 
 - **Ajout de nouvelles fonctionnalités dans Carnivore** :  
-  Par exemple, on peut ajouter la méthode **EatHerbivore()** pour simuler un carnivore mangeant un herbivore. Cette fonctionnalité est ajoutée directement dans la classe **Carnivore** sans avoir à modifier la classe **Animal**. Chaque sous-classe peut ainsi ajouter des comportements spécifiques sans affecter le reste du code.
+  Par exemple, on a ajouté la méthode **EatHerbivore()** pour simuler un carnivore mangeant un herbivore. Cette fonctionnalité a été ajoutée directement dans la classe **Carnivore** sans avoir à modifier la classe **Animal**. Chaque sous-classe peut ainsi ajouter des comportements spécifiques sans affecter le reste du code.
   
-## Le diagramme d'activités
+# Le diagramme d'activités
 
 ![image](https://github.com/user-attachments/assets/9049111e-eabe-4726-b2d2-dc73fb07e5bf)
+
+# Le diagramme de séquence
+
+# Le diagramme de classes
 
