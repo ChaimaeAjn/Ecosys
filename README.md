@@ -67,7 +67,7 @@ L'objectif est de modéliser un cycle de vie complet de l'écosystème en temps 
 
    ```bash
    git clone https://github.com/ChaimaeAjn/Ecosys.git
-   cd EcoSysSimulation
+   cd Ecosys
    ```
 
 2. Ouvrez le projet dans **Visual Studio**.
