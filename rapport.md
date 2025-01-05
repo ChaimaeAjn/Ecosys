@@ -44,5 +44,10 @@ Dans notre code, la classe **Carnivore** respecte ce principe grâce à l'hérit
 
 # Le diagramme de séquence
 
+
+
 # Le diagramme de classes
+
+![image](https://github.com/user-attachments/assets/ef1ef81b-deab-4c17-b1c3-e3664e81343a)
+
 
