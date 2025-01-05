@@ -41,7 +41,7 @@ L'objectif est de modéliser un cycle de vie complet de l'écosystème en temps 
 
 - **`EcosysObjet` :** Classe de base pour toutes les entités.
 - **`Plante` :** Représente les plantes de l'écosystème.
-- **`Herbivore` :** Les animaux herbivores, capables de manger des plantes et de fuir les carnivores.
+- **`Herbivore` :** Les animaux herbivores, capables de manger des plantes.
 - **`Carnivore` :** Les animaux carnivores, chasseurs d'herbivores.
 - **`Gestation<T>` :** Classe générique gérant la reproduction des herbivores et carnivores.
 - **`MainWindowViewModel` :** Contrôle la logique principale de la simulation et gère l'interface utilisateur.
