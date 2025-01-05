@@ -80,8 +80,8 @@ L'objectif est de modéliser un cycle de vie complet de l'écosystème en temps 
 
 1. Lancez l'application.
 2. Configurez les paramètres initiaux de l'écosystème via l'interface utilisateur (nombre d'entités, taille de la carte, etc.).
-3. Appuyez sur **Démarrer** pour lancer la simulation.
-4. Observez les interactions et les mises à jour en temps réel.
+4. Appuyez sur **Démarrer** ou entrez la commande **dotnet run** pour lancer la simulation 
+5. Observez les interactions et les mises à jour en temps réel.
 
 ---
 
