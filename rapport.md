@@ -1,4 +1,4 @@
-#Une description d’au moins deux principes SOLID utilisés dans le projet.
+# Une description d’au moins deux principes SOLID utilisés dans le projet.
 
 ## 1. Le principe de responsabilité unique (SRP) avec le code Animal.cs
 
